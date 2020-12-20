@@ -1,0 +1,52 @@
+<!-- This is a static file -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>MatchMoji</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <section id="topbar">
+    <div class="columns is-mobile">
+      <div class="column is-narrow has-text-left">
+        <h1 class="title" style="margin: 5px;">MatchMoji</h1>
+      </div>
+      <div class="column button_container">
+        <button data-num="12" class="roll_btn button is-success ">Easy</button>
+        <button data-num="20" class="roll_btn button is-warning ">Medium</button>
+        <button data-num="32" class="roll_btn button is-danger ">Hard</button>
+      </div>
+    </div>
+
+  </section>
+
+  <div id="etile_container">
+  </div>
+  
+  
+  <div id='winner' class='box has-text-centered animate__animated animate__rotateIn'>
+    <div class='title'>Congratulations!</div>
+    <div class='subtitle'>😁</div>
+  </div>
+  
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/1.0.5/jquery.mobile-events.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/howler@2.2.1/dist/howler.min.js"></script>
+<script src="/script.js" defer></script>
+<script src="colyseus.js"></script>
+
+</html>

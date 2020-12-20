@@ -1,0 +1,115 @@
+
+#topbar{
+  position:absolute;
+  top:0px;
+  left:0px;
+  height:50px;
+  right:0px;
+  background-color:lightblue;
+  text-align:center;
+  font-size:0.8em !important;
+}
+
+
+#topbar .title{
+  font-size:2em;
+}
+
+#topbar .subtitle{
+  font-size:1.2em;
+}
+
+#topbar .button_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+#topbar .button{
+  padding:5px;
+  margin:5px;
+  width:100px;
+}
+
+
+#etile_container{
+  position: absolute;
+  bottom: 0px;
+  background: lightyellow;
+  right: 0px;
+  top: 50px;
+  left:0px;
+  text-align:center;
+}
+
+.etile{
+  position: relative;
+  display: inline-block;
+  background-color:#ddd;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  font-size: 90px;
+  font-family:serif;
+  font-weight:bold;
+  margin:5px;
+  border-radius:10px;
+  cursor:pointer;
+  transition: transform 0.5s ease-in-out;
+  transform: rotateY(0deg) scale(-1, 1);
+  box-shadow: 4px 4px 11px grey;
+}
+.etile.hidden{
+  visibility: hidden;
+}
+
+.etile .overlay {
+    background-color: grey;
+    color: #ffffff94;
+    display: block;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    transform: scale(-1, 1);
+    transform: rotateY(0deg) scale(-1, 1);
+}
+
+.etile .overlay.flipped {
+    display:none;
+}
+
+.anim_flipped{
+  transform: rotateY(180deg) scale(-1, 1);
+}
+
+
+#winner{
+  position:fixed;
+  top:20vh;
+  left:30%;
+  right:30%;
+  display:none;
+}
+#winner .subtitle{
+  font-size:80px;
+}
+
+
+@media only screen and (max-width: 650px) {
+ 
+  .etile{
+    width: 60px;
+    height: 60px;
+    margin: 4px;
+  }
+  
+  #topbar .button{
+    font-size:10px;
+  }
+  
+
+}

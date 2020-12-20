@@ -1,0 +1,26 @@
+{
+  "name": "MatchMoji",
+  "version": "0.0.1",
+  "description": "A simple mutliplayer emoji-based matching game based using the colyseus game engine.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "colyseus": "^0.14.2",
+    "@colyseus/schema": "1.0.6"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": ""
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "colyseus",
+    "express"
+  ]
+}
